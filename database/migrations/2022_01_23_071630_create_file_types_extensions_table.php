@@ -16,7 +16,7 @@ class CreateFileTypesExtensionsTable extends Migration
         Schema::create('file_types_extensions', function (Blueprint $table) {
             $table->id();
             $table->string('extension');
-            $table->integer('type_id');
+            $table->integer('file_types_id');
             $table->timestampsTz();
         });
     }

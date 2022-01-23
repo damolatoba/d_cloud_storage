@@ -27,10 +27,10 @@ class DatabaseSeeder extends Seeder
         DB::insert('insert into file_types (id, type, created_at) values (?, ?, ?)', [3, 'docs', date("Y-m-d H:i:s")]);
 
 
-        DB::insert('insert into file_types_extensions (id, extension, type_id, created_at) values (?, ?, ?, ?)', [1, 'mp3', 1, date("Y-m-d H:i:s")]);
-        DB::insert('insert into file_types_extensions (id, extension, type_id, created_at) values (?, ?, ?, ?)', [2, 'mp4', 2, date("Y-m-d H:i:s")]);
-        DB::insert('insert into file_types_extensions (id, extension, type_id, created_at) values (?, ?, ?, ?)', [3, 'pdf', 3, date("Y-m-d H:i:s")]);
-        DB::insert('insert into file_types_extensions (id, extension, type_id, created_at) values (?, ?, ?, ?)', [4, 'txt', 3, date("Y-m-d H:i:s")]);
+        DB::insert('insert into file_types_extensions (id, extension, file_types_id, created_at) values (?, ?, ?, ?)', [1, 'mp3', 1, date("Y-m-d H:i:s")]);
+        DB::insert('insert into file_types_extensions (id, extension, file_types_id, created_at) values (?, ?, ?, ?)', [2, 'mp4', 2, date("Y-m-d H:i:s")]);
+        DB::insert('insert into file_types_extensions (id, extension, file_types_id, created_at) values (?, ?, ?, ?)', [3, 'pdf', 3, date("Y-m-d H:i:s")]);
+        DB::insert('insert into file_types_extensions (id, extension, file_types_id, created_at) values (?, ?, ?, ?)', [4, 'txt', 3, date("Y-m-d H:i:s")]);
 
     }
 }
